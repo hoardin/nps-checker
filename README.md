@@ -1,4 +1,4 @@
-simple-http-listener
+national park service checker
 ====================
 
 Just a basic script written to find out what time the National Park Service website starts accepting lottery applications for hiking permits each day.
