@@ -1,5 +1,6 @@
 import requests
 import BeautifulSoup
+import sys
 import urllib
 import time
 
@@ -33,6 +34,19 @@ def extract_dates(html):
             dates.append(tag.get('value'))
     return dates
 
+def extract_numbers(html):
+    numbers = list()
+    soup = BeautifulSoup.BeautifulSoup(html)
+
+    table = soup.find('table', cellpadding="6")
+    rows = table.findAll('tr')
+    for tr in rows:
+        dates = tr.findAll('td')
+        cols = tr.findAll('td', align="center")
+        for td in cols:
+            numbers.append(td.find(text=True))
+    return numbers
+
 def get_zion_narrows_dates(proxyDict):
     #make initial request
     r = requests.get(DRAWING_URL)
@@ -43,11 +57,69 @@ def get_zion_narrows_dates(proxyDict):
     r = requests.post(DRAWING_URL, post_params, proxies=proxyDict, cookies=cookiejar)
     dates = extract_dates(r.text)
     return dates
+def get_zion_narrows_numbers(proxyDict):
+    #make initial request
+    r = requests.get(DRAWING_URL)
+    cookiejar = r.cookies
+    post_params = extract_form_fields(r.text)
+
+    #post request to get drawing dates for narrows
+    r = requests.post(DRAWING_URL, post_params, proxies=proxyDict, cookies=cookiejar)
+    rows = extract_numbers(r.text)
+    numavailable = rows[::2]
+    numlottery = rows[1::2]
+    dates = extract_dates(r.text)
+    return dates, numavailable, numlottery
 
 def return_added_items(old_list, new_list):
-        old_set, new_set = [set(old_list), set(new_list)]
-        return new_set - new_set.intersection(old_set)
+    old_set, new_set = [set(old_list), set(new_list)]
+    return new_set - new_set.intersection(old_set)
 
+def return_added_lottery(old_list, new_list):
+    difference = [0]*len(new_list)
+    old_list = map(int, old_list)
+    new_list = map(int, new_list)
+
+    if (len(old_list) != len(new_list)):
+        print "array lengths differ"
+        return 0
+    else:
+        for x in range(0,len(new_list)):
+            if new_list[x] != old_list[x]:
+                difference[x] = new_list[x]-old_list[x]
+            else:
+                difference[x] = 0
+    return difference
+
+
+sys.stdout = open('lottery.log','a',0)
+
+print "starting run..."
+lastdates, lastnumavail, lastnumlottery = get_zion_narrows_numbers(PROXY_DICT)
+print "initial dates: ", lastdates, "\nintial numbers: ", lastnumlottery
+
+
+while True:
+    time.sleep(POLL_DURATION_SECONDS)
+    newdates, newnumavail, newnumlottery = get_zion_narrows_numbers(PROXY_DICT)
+    addedSet = return_added_lottery(lastnumlottery, newnumlottery)
+    if addedSet == 0:
+        print "Date changes.  Repolling."
+        lastdates = newdates
+        print "new dates: ", lastdates
+        print "new lottery counts: "
+    elif all(i == 0 for i in addedSet):
+        print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), " - Nothing added"
+
+    else:
+        for i in range(0, len(addedSet)):
+            if (addedSet[i] != 0):
+                print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), " - Added lottery for: ", newdates[i]
+
+    lastnumavail, lastnumlottery = newnumavail, newnumlottery
+    print lastnumlottery,"\n"
+
+"""
 lastdates = get_zion_narrows_dates(PROXY_DICT)
 print "Initial dates: ", lastdates
 while True:
@@ -60,7 +132,7 @@ while True:
     else:
         print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), " - Nothing added"
     lastdates = newdates
-
+"""
 
 """
 Output:

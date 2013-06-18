@@ -1,0 +1,31 @@
+initial dates:  [u'06/20/2013', u'06/21/2013', u'06/22/2013', u'06/23/2013', u'06/25/2013'] 
+intial numbers:  [u'9', u'15', u'3', u'3', u'2']
+2013-06-18 11:43:22  - Added lottery for:  06/22/2013
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 11:53:24  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 12:03:25  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 12:13:28  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 12:23:29  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 12:33:30  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 12:43:31  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+2013-06-18 12:53:33  - Nothing added
+[u'9', u'15', u'4', u'3', u'2']
+array lengths differ
+a new date has been added.  repolling.
+[u'15', u'4', u'3', u'2']
+
+starting run...
+initial dates:  [u'06/21/2013', u'06/22/2013', u'06/23/2013', u'06/25/2013'] 
+intial numbers:  [u'15', u'4', u'3', u'2']
+2013-06-18 13:21:39  - Nothing added
+[u'15', u'4', u'3', u'2'] 
+
+2013-06-18 13:31:48  - Nothing added
+[u'15', u'4', u'3', u'2'] 
+
