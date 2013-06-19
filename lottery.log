@@ -1,31 +1,102 @@
-initial dates:  [u'06/20/2013', u'06/21/2013', u'06/22/2013', u'06/23/2013', u'06/25/2013'] 
-intial numbers:  [u'9', u'15', u'3', u'3', u'2']
-2013-06-18 11:43:22  - Added lottery for:  06/22/2013
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 11:53:24  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 12:03:25  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 12:13:28  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 12:23:29  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 12:33:30  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 12:43:31  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-2013-06-18 12:53:33  - Nothing added
-[u'9', u'15', u'4', u'3', u'2']
-array lengths differ
-a new date has been added.  repolling.
-[u'15', u'4', u'3', u'2']
-
 starting run...
 initial dates:  [u'06/21/2013', u'06/22/2013', u'06/23/2013', u'06/25/2013'] 
-intial numbers:  [u'15', u'4', u'3', u'2']
-2013-06-18 13:21:39  - Nothing added
-[u'15', u'4', u'3', u'2'] 
+intial numbers:  [u'17', u'4', u'3', u'2']
+2013-06-18 21:56:01  - Nothing added
+[u'17', u'4', u'3', u'2'] 
 
-2013-06-18 13:31:48  - Nothing added
-[u'15', u'4', u'3', u'2'] 
+2013-06-18 22:06:02  - Nothing added
+[u'17', u'4', u'3', u'2'] 
+
+2013-06-18 22:16:03  - Nothing added
+[u'17', u'4', u'3', u'2'] 
+
+2013-06-18 22:26:04  - Nothing added
+[u'17', u'4', u'3', u'2'] 
+
+2013-06-18 22:36:05  - Added lottery for:  06/25/2013
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 22:46:06  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 22:56:07  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 23:06:08  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 23:16:09  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 23:26:10  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 23:36:11  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 23:46:12  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-18 23:56:13  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-19 00:06:14  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-19 00:16:15  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-19 00:26:16  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-19 00:36:17  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+2013-06-19 00:46:18  - Nothing added
+[u'17', u'4', u'3', u'3'] 
+
+array lengths differ
+Date changes.  Repolling.
+new dates:  [u'06/21/2013', u'06/22/2013', u'06/23/2013', u'06/25/2013', u'06/26/2013']
+new lottery counts: 
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 01:06:20  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 01:16:21  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 01:26:21  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 01:36:22  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 01:46:23  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 01:56:24  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 02:06:25  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 02:16:26  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 02:26:27  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 02:36:30  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 02:46:31  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 02:56:33  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
+
+2013-06-19 03:06:36  - Nothing added
+[u'17', u'4', u'3', u'3', u'0'] 
 
